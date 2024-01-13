@@ -3,6 +3,17 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import Header from './components/Header'
+import { referenceList } from './data'
+
+function ReferenceItem(props) {
+  return(
+    <li>
+      <p>
+        {props.title}
+      </p>
+    </li>
+  )
+}
 
 function App() {
   const [count, setCount] = useState(0)
@@ -30,6 +41,9 @@ function App() {
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
       </p>
+      <ul>
+        <ReferenceItem title={referenceList[0].title} />
+      </ul>
     </>
   )
 }
