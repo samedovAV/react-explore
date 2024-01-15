@@ -28,7 +28,7 @@ export default function App() {
       </div>
       <section>
         <ul>
-          <ReferenceItem {... referenceList[0]} />
+          {referenceList.map((reference) => <ReferenceItem key={reference.title} {... reference} />)}
         </ul>
       </section>
     </>
