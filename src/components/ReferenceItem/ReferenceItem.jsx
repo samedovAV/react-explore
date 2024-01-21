@@ -1,9 +1,9 @@
-export default function ReferenceItem({ title }) {
+export default function ReferenceItem({ link, name }) {
     return(
       <li>
-        <p>
-          {title}
-        </p>
+        <a href={link} target="_blank">
+          {name}
+        </a>
       </li>
     )
   }

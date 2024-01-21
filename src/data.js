@@ -1,8 +1,10 @@
 export const referenceList = [
     {
-        title: 'https://htmlreference.io'
+        link: 'https://htmlreference.io',
+        name: 'htmlreference.io'
     },
     {
-        title: 'https://ascii.cl/'
+        link: 'https://ascii.cl/',
+        name: 'ascii.cl'
     }
 ]
