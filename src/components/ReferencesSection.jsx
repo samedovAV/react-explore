@@ -1,7 +1,7 @@
-import ReferenceItem from './ReferenceItem/ReferenceItem'
+import { ReferenceItem } from 'components/ReferenceItem'
 import { referenceList } from '../data'
 
-export default function ReferencesSection() {
+export function ReferencesSection() {
     return(
         <section>
             <h3>References</h3>

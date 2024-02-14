@@ -15,7 +15,7 @@ const HeaderContainer = styled.header`
     background-color: #242424;
 `
 
-export default function Header() {
+export function Header() {
   const [now, setNow] = useState(new Date())
 
   useEffect(() => {

@@ -1,7 +1,7 @@
 import { useEffect, useState, useCallback } from "react";
-import Modal from "../Modal/Modal";
+import { Modal }  from "components/Modal";
 
-export default function ReferenceItem({ link, name }) {
+export function ReferenceItem({ link, name }) {
   const [modal, setModal] = useState(false)
   const [loading, setLoading] = useState(false)
   const [users, setUsers] = useState([])
@@ -21,7 +21,7 @@ export default function ReferenceItem({ link, name }) {
   return(
     <section>
       <li onClick={() => setModal(true)}>
-        <a href={link} target="_blank">
+        <a rel="noopener noreferrer" href={link} target="_blank">
           {name}
         </a>
       </li>
